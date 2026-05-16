@@ -9,7 +9,8 @@
   --accent:   #4f9bff;
   --accent2:  #7fd8c8;
   --gold:     #e8c46a;
-  --serif:    'Newsreader', Georgia, serif;
+  --serif:    'Source Serif 4', Georgia, serif;
+  --display:  'Playfair Display', Georgia, serif;
   --sans:     'Inter', system-ui, sans-serif;
   --mono:     'Space Mono', monospace;
 }
@@ -122,14 +123,13 @@ nav .inner {
 }
 
 h1 {
-  font-family: var(--serif);
-  font-size: clamp(2rem, 5vw, 3rem);
-  font-weight: 700;
+  font-family: var(--display);
+  font-size: clamp(2.2rem, 5.5vw, 3.4rem);
+  font-weight: 800;
   font-style: italic;
-  font-optical-sizing: auto;
-  line-height: 1.12;
+  line-height: 1.1;
   color: var(--bright);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   margin-bottom: 1.5rem;
 }
 
@@ -239,6 +239,7 @@ article p {
   color: var(--body);
   margin-bottom: 1.5em;
   font-weight: 300;
+  font-optical-sizing: auto;
 }
 
 article p:first-of-type::first-letter {
@@ -253,13 +254,12 @@ article p:first-of-type::first-letter {
 }
 
 article h2 {
-  font-family: var(--serif);
-  font-size: 1.5rem;
-  font-weight: 600;
-  font-optical-sizing: auto;
+  font-family: var(--display);
+  font-size: 1.55rem;
+  font-weight: 700;
   color: var(--bright);
   margin: 2.5rem 0 1rem;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
 }
 
 article h2::before {
@@ -279,12 +279,13 @@ blockquote {
 }
 
 blockquote p {
-  font-family: var(--serif);
+  font-family: var(--display);
   font-size: 1.15rem !important;
   font-style: italic;
+  font-weight: 700;
   color: var(--bright) !important;
   margin-bottom: 0.5em !important;
-  line-height: 1.6 !important;
+  line-height: 1.5 !important;
 }
 
 blockquote p::first-letter { all: unset; }
