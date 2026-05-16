@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Universe Has a Skeleton — And We Just Saw It Clearly for the First Time</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+
+<nav>
+  <div class="inner">
+    <a class="nav-brand" href="https://brandmeetscode.com/?utm_source=science-brief&amp;utm_medium=content&amp;utm_campaign=cosmic-web&amp;utm_content=nav" target="_blank" rel="noopener">Science Brief <span class="nav-by">by BrandMeetsCode</span></a>
+    <span class="nav-meta">Published May 16, 2026</span>
+  </div>
+</nav>
+
+<div class="page-wrap">
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-tag">Astronomy · Breaking</div>
+    <h1>The Universe Has a Skeleton — And We Just Saw It Clearly for the First Time</h1>
+    <p class="hero-deck">
+      NASA's James Webb Space Telescope has produced the most detailed map ever made of
+      the cosmic web — the vast, invisible scaffolding that connects every galaxy in existence.
+      Here's what that means, and why it matters.
+    </p>
+    <div class="hero-byline">
+      <span class="byline-item"><span class="byline-label">Source</span><span class="byline-val">The Astrophysical Journal</span></span>
+      <span class="byline-sep">·</span>
+      <span class="byline-item"><span class="byline-label">Led by</span><span class="byline-val">UC Riverside</span></span>
+      <span class="byline-sep">·</span>
+      <span class="byline-item"><span class="byline-label">Published</span><span class="byline-val">May 12, 2026</span></span>
+    </div>
+  </header>
+
+  <!-- VISUALIZATION -->
+  <div class="viz-wrap fade-in"
+       data-track-view="visualization_seen"
+       data-track-prop-id="cosmic-web-canvas">
+    <div class="viz-label">
+      <span>Cosmic Web Structure — Simulated (COSMOS-Web Survey)</span>
+      <span class="dot"></span>
+    </div>
+    <canvas id="cosmicCanvas" class="viz-canvas" style="display:block;width:100%;height:400px;"></canvas>
+    <div class="viz-caption">
+      Procedurally generated simulation based on COSMOS-Web survey structure.
+      Gold nodes = dense galaxy clusters at filament intersections. Teal threads = dark matter filaments.
+      Dark voids between filaments contain almost no galaxies. Particles animate along filament paths.
+    </div>
+  </div>
+
+  <!-- ARTICLE BODY -->
+  <article>
+
+    <p>
+      The universe is not randomly scattered. Galaxies — including our own Milky Way — don't
+      float freely through space. They sit on the threads and intersections of a vast invisible
+      scaffold called the cosmic web: a network of dark matter filaments, gas sheets, and
+      enormous empty voids that spans the entire observable universe. We've known it exists
+      for decades. But until now, we've never seen it clearly.
+    </p>
+
+    <div class="data-row fade-in" data-track-view="data_stats_seen">
+      <div class="data-cell">
+        <div class="data-num">164K</div>
+        <div class="data-unit">Galaxies mapped</div>
+        <div class="data-desc">Individual galaxies catalogued in the COSMOS-Web survey, each precisely placed in cosmic time.</div>
+      </div>
+      <div class="data-cell">
+        <div class="data-num">13.7B</div>
+        <div class="data-unit">Years of history</div>
+        <div class="data-desc">The map traces galaxy structure from today all the way back to when the universe was ~1 billion years old.</div>
+      </div>
+      <div class="data-cell">
+        <div class="data-num">3×</div>
+        <div class="data-unit">Full moon area</div>
+        <div class="data-desc">The continuous sky area covered by COSMOS-Web — large enough to sample the large-scale structure reliably.</div>
+      </div>
+    </div>
+
+    <h2>What Is the Cosmic Web?</h2>
+
+    <p>
+      Roughly 380,000 years after the Big Bang, tiny density differences in the early
+      universe began to amplify. Regions that were slightly denser than average attracted
+      more matter via gravity. Over hundreds of millions of years, that matter collapsed
+      into sheets, then into filaments, then into clusters where filaments intersect.
+      The result is what cosmologists call the cosmic web: a foam-like structure where
+      most of the universe's matter lives on the surfaces and threads of enormous bubbles,
+      while the interiors — the voids — contain almost nothing at all.
+    </p>
+
+    <blockquote>
+      <p>"JWST has completely changed our view of the universe, and COSMOS-Web was designed from the start to give us the wide, deep view we need to see the cosmic web."</p>
+      <cite>Hossein Hatamnia, lead author · UC Riverside &amp; Carnegie Observatories</cite>
+    </blockquote>
+
+    <p>
+      Dark matter — which neither emits nor absorbs light and makes up roughly 27% of the
+      universe's total energy content — provides the gravitational skeleton for these structures.
+      The visible matter (gas and galaxies) settles along the dark matter filaments like
+      dew on a spider's web. Where threads cross, galaxies pile up into massive clusters.
+      Galaxies like our own Milky Way are not exceptional objects; they're just matter
+      that happened to fall into one of these intersections.
+    </p>
+
+    <h2>Why Webb Changes Everything</h2>
+
+    <p>
+      Previous maps of the cosmic web, built using the Hubble Space Telescope and ground-based
+      surveys, suffered from two fundamental limitations: they couldn't see far enough, and
+      they couldn't measure galaxy distances precisely enough. The result was like photographing
+      a forest from far away — you could see there were trees, but the detail was smeared.
+    </p>
+
+    <div class="note fade-in">
+      <strong>Technical note.</strong> JWST's advantage comes from two properties working together.
+      First, its infrared instruments detect light shifted to longer wavelengths by the universe's
+      expansion — meaning faint, distant, ancient galaxies become visible that were simply invisible
+      to Hubble. Second, the larger mirror (6.5m vs Hubble's 2.4m) and improved spectroscopic
+      precision let the team measure each galaxy's redshift — and therefore its exact distance —
+      with far greater accuracy. That precision is what allows galaxies to be placed into their
+      correct "slice" of cosmic time, sharpening the map dramatically.
+    </div>
+
+    <p>
+      The new COSMOS-Web map, published May 12 in <em>The Astrophysical Journal</em> by a team
+      led by UC Riverside researchers, is the product of the largest observing program ever
+      awarded telescope time on JWST. Structures that Hubble blurred into single features
+      now resolve into multiple distinct filaments. The early universe — previously a murky
+      era barely accessible to observation — is now revealed to be more textured and complex
+      than cosmological models predicted.
+    </p>
+
+    <blockquote>
+      <p>"What used to look like a single structure now resolves into many, and details that were smoothed away before are now clearly visible."</p>
+      <cite>Bahram Mobasher, professor of physics &amp; astronomy · UC Riverside</cite>
+    </blockquote>
+
+    <h2>What the New Map Actually Shows</h2>
+
+    <p>
+      The map is constructed as a timeline: the present-day universe sits at one end;
+      the opposite end reaches back to when the universe was less than a billion years old,
+      roughly 700 million years after the Big Bang. Bright, dense regions trace galaxy clusters
+      and the filaments between them. Dark regions are the voids — volumes of space hundreds
+      of millions of light-years across containing almost no galaxies at all.
+    </p>
+
+    <table class="compare fade-in" data-track-view="comparison_table_seen">
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>Hubble-era view</th>
+          <th>JWST / COSMOS-Web</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Earliest epoch accessible</td>
+          <td>~2–3 billion years after Big Bang</td>
+          <td>~few hundred million years after Big Bang <span class="tag-new">New</span></td>
+        </tr>
+        <tr>
+          <td>Galaxy count (same sky area)</td>
+          <td>Tens of thousands</td>
+          <td>164,000+ (COSMOS-Web)</td>
+        </tr>
+        <tr>
+          <td>Filament resolution</td>
+          <td>Single blurred structures</td>
+          <td>Multiple distinct filaments resolved <span class="tag-new">New</span></td>
+        </tr>
+        <tr>
+          <td>Distance precision</td>
+          <td>Photometric redshift (~10–15% uncertainty)</td>
+          <td>Improved redshift precision, finer time-slicing</td>
+        </tr>
+        <tr>
+          <td>Cosmic dust penetration</td>
+          <td>Limited (optical/UV)</td>
+          <td>High (infrared sees through dust)</td>
+        </tr>
+        <tr>
+          <td>Data availability</td>
+          <td>Proprietary periods</td>
+          <td>Fully public: catalog + maps + 3D evolution video</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Why This Stresses Cosmological Models</h2>
+
+    <p>
+      The deeper finding here isn't just a prettier picture. The cosmic web's structure is
+      a direct prediction of our standard model of cosmology — a model called ΛCDM (Lambda
+      Cold Dark Matter) that specifies exactly how structure should grow from early quantum
+      fluctuations under the influence of dark matter and dark energy. Every simulation
+      of the universe is, in part, an attempt to reproduce the cosmic web's statistics:
+      how many filaments of what thickness, how large the voids, how massive the clusters.
+    </p>
+
+    <p>
+      The new JWST map shows that the early universe is more texturally complex than
+      previous observations implied. That's not necessarily evidence that ΛCDM is wrong —
+      but it does mean simulations now face a stricter test. Reproducing the blurry Hubble
+      picture was easier. Reproducing JWST's sharper, more complex view at earlier epochs
+      is harder. Cosmologists now have sharper data to match. Some simulations will survive
+      the test. Others may need revision.
+    </p>
+
+    <h2>What Comes Next</h2>
+
+    <p>
+      The team has released everything: the full pipeline used to build the map, the
+      complete 164,000-galaxy catalog with cosmic density measurements, and a video
+      showing the web's evolution across billions of years — all publicly available.
+      This open-science approach means astronomers worldwide can immediately apply
+      the data to their own questions: the birth rates of stars in different cosmic
+      environments, how galaxy shapes correlate with their position in the web,
+      whether void galaxies evolve differently from cluster galaxies.
+    </p>
+
+    <p>
+      JWST is only a few years into its operational life. COSMOS-Web is one program
+      among hundreds. As more surveys are completed and data accumulates, maps like
+      this will be refined, extended, and cross-matched with gravitational lensing and
+      X-ray surveys that can trace the dark matter directly. For the first time, the
+      universe's skeleton is not just a theory. It's a map you can <a href="https://cosmos.astro.caltech.edu/page/cosmosweb-dr" target="_blank" rel="noopener" data-track-click="data_download" data-track-prop-source="closing-paragraph">download</a>.
+    </p>
+
+    <div class="note">
+      <strong>Paper reference.</strong> Hatamnia et al., "Large-scale Structure in COSMOS-Web:
+      Tracing Galaxy Evolution in the Cosmic Web up to z ∼ 7 with the Largest JWST Survey."
+      The Astrophysical Journal, 1002 (2): 192. DOI: 10.3847/1538-4357/ae5bac · Published May 6, 2026.<br>
+      <strong>Data &amp; catalog:</strong> Publicly available via the COSMOS collaboration —
+      <a href="https://cosmos.astro.caltech.edu/page/cosmosweb-dr" target="_blank" rel="noopener">cosmos.astro.caltech.edu/page/cosmosweb-dr</a><br>
+      <strong>Press release:</strong>
+      <a href="https://news.ucr.edu/articles/2026/05/11/astronomers-produce-most-detailed-map-cosmic-web" target="_blank" rel="noopener">UCR News, May 11 2026</a>
+    </div>
+
+  </article>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-source">
+      <strong style="color:var(--body);">Sources</strong><br>
+      <a href="https://news.ucr.edu/articles/2026/05/11/astronomers-produce-most-detailed-map-cosmic-web" target="_blank" rel="noopener">University of California, Riverside — UCR News, May 11 2026</a><br>
+      <a href="https://doi.org/10.3847/1538-4357/ae5bac" target="_blank" rel="noopener">The Astrophysical Journal — DOI: 10.3847/1538-4357/ae5bac</a><br>
+      <a href="https://cosmos.astro.caltech.edu/page/cosmosweb-dr" target="_blank" rel="noopener">COSMOS-Web Public Data Release</a><br>
+      ScienceDaily &amp; Futurity.org reporting, May 12–15 2026
+    </div>
+    <div class="footer-tag">
+      Produced by <a href="https://brandmeetscode.com/?utm_source=science-brief&amp;utm_medium=content&amp;utm_campaign=cosmic-web&amp;utm_content=footer" target="_blank" rel="noopener">BrandMeetsCode</a> · May 2026
+    </div>
+  </div>
+</footer>
+
+<script src="/js/track.js" defer></script>
+<script src="page.js" defer></script>
+
+</body>
+</html>
