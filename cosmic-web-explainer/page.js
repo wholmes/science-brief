@@ -360,7 +360,7 @@ function initCosmicWeb(canvas) {
   }
 
   function drawLabels(w, h) {
-    ctx.font = '500 9px JetBrains Mono, monospace';
+    ctx.font = '500 9px Space Mono, monospace';
     ctx.letterSpacing = '0.12em';
     ctx.textAlign = 'center';
     [[0.14, 0.42], [0.83, 0.42], [0.48, 0.92]].forEach(([nx, ny]) => {
@@ -368,21 +368,21 @@ function initCosmicWeb(canvas) {
       ctx.fillText('VOID', nx * w, ny * h);
     });
     const cx = nodes[0].x, cy = nodes[0].y;
-    ctx.font = '500 8px JetBrains Mono, monospace';
+    ctx.font = '500 8px Space Mono, monospace';
     ctx.fillStyle = 'rgba(232,196,106,0.7)';
     ctx.textAlign = 'left';
     ctx.fillText('SUPERCLUSTER NODE', cx + 14, cy - 8);
     ctx.beginPath(); ctx.moveTo(cx + 8, cy - 2); ctx.lineTo(cx + 13, cy - 6);
     ctx.strokeStyle = 'rgba(232,196,106,0.4)'; ctx.lineWidth = 0.7; ctx.stroke();
     ctx.fillStyle = 'rgba(127,216,200,0.55)';
-    ctx.font = '400 7.5px JetBrains Mono, monospace';
+    ctx.font = '400 7.5px Space Mono, monospace';
     ctx.textAlign = 'center';
     ctx.fillText('DARK MATTER FILAMENT', w * 0.26, h * 0.12);
     const axY = h - 16;
     ctx.beginPath(); ctx.moveTo(24, axY); ctx.lineTo(w - 24, axY);
     ctx.strokeStyle = 'rgba(40,46,80,0.7)'; ctx.lineWidth = 0.7; ctx.stroke();
     ctx.fillStyle = 'rgba(58,61,85,0.9)';
-    ctx.font = '400 7px JetBrains Mono, monospace';
+    ctx.font = '400 7px Space Mono, monospace';
     ctx.textAlign = 'left';  ctx.fillText('TODAY', 26, axY - 4);
     ctx.textAlign = 'right'; ctx.fillText('~1 BYR AFTER BIG BANG', w - 26, axY - 4);
     ctx.textAlign = 'center'; ctx.fillText('← 13.7 BILLION YEARS OF COSMIC HISTORY →', w / 2, axY - 4);
