@@ -46,7 +46,12 @@
        data-track-prop-id="cosmic-web-canvas">
     <div class="viz-label">
       <span>Cosmic Web Structure — Simulated (COSMOS-Web Survey)</span>
-      <span class="dot"></span>
+      <span class="viz-expand-hint">
+        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 4V1H4M6 1H9V4M9 6V9H6M4 9H1V6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Expand
+      </span>
     </div>
     <canvas id="cosmicCanvas" class="viz-canvas" style="display:block;width:100%;height:400px;"></canvas>
     <div class="viz-caption">
@@ -266,6 +271,23 @@
 
 <script src="../js/track.js" defer></script>
 <script src="page.js" defer></script>
+
+<!-- VISUALIZATION MODAL -->
+<div id="viz-modal" class="viz-modal" role="dialog" aria-modal="true" aria-label="Cosmic web expanded view" hidden>
+  <div class="viz-modal-overlay"></div>
+  <div class="viz-modal-inner">
+    <div class="viz-modal-header">
+      <span class="viz-modal-title">Cosmic Web Structure — Simulated (COSMOS-Web Survey)</span>
+      <button class="viz-modal-close" aria-label="Close">&#x2715;</button>
+    </div>
+    <canvas id="cosmicCanvasModal" class="viz-modal-canvas"></canvas>
+    <div class="viz-modal-caption">
+      Procedurally generated simulation based on COSMOS-Web survey structure.
+      Gold nodes = dense galaxy clusters at filament intersections. Teal threads = dark matter filaments.
+      Dark voids between filaments contain almost no galaxies.
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
