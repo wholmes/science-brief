@@ -264,10 +264,11 @@ article h2 {
 
 article h2::before {
   content: '§';
-  color: var(--muted);
+  color: var(--accent);
   font-size: 0.9rem;
   margin-right: 0.5rem;
   font-weight: 300;
+  opacity: 0.7;
 }
 
 /* ── PULL QUOTE ── */
