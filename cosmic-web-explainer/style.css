@@ -254,12 +254,13 @@ article p:first-of-type::first-letter {
 }
 
 article h2 {
-  font-family: var(--display);
-  font-size: 1.55rem;
-  font-weight: 700;
+  font-family: var(--sans);
+  font-size: 1.15rem;
+  font-weight: 500;
   color: var(--bright);
   margin: 2.5rem 0 1rem;
-  letter-spacing: -0.01em;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
 }
 
 article h2::before {
@@ -280,13 +281,13 @@ blockquote {
 }
 
 blockquote p {
-  font-family: var(--display);
-  font-size: 1.35rem !important;
+  font-family: var(--serif);
+  font-size: 1.05rem !important;
   font-style: italic;
-  font-weight: 600;
+  font-weight: 400;
   color: var(--bright) !important;
   margin-bottom: 0.5em !important;
-  line-height: 1.45 !important;
+  line-height: 1.7 !important;
 }
 
 blockquote p::first-letter { all: unset; }

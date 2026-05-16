@@ -81,12 +81,12 @@ if (typeof Track !== 'undefined') {
     else { x = W + 5; y = r() * H * 0.6; angle = Math.PI + Math.PI / 6 - r() * (Math.PI / 5); }
     return {
       x, y,
-      vx: Math.cos(angle) * (2.5 + r() * 3.5),
-      vy: Math.sin(angle) * (2.5 + r() * 3.5),
-      len: 60 + r() * 90,
-      alpha: 0.5 + r() * 0.4,
+      vx: Math.cos(angle) * (3.5 + r() * 4.5),
+      vy: Math.sin(angle) * (3.5 + r() * 4.5),
+      len: 100 + r() * 160,
+      alpha: 0.65 + r() * 0.3,
       life: 1.0,
-      decay: 0.012 + r() * 0.008,
+      decay: 0.008 + r() * 0.006,
       width: 0.6 + r() * 0.8,
     };
   }
@@ -153,7 +153,14 @@ if (typeof Track !== 'undefined') {
       ctx.fillStyle = `rgba(${s.color},${a})`;
       ctx.fill();
     });
-    if (frame % 280 === 0 && Math.random() < 0.6) shooters.push(spawnShooter(shooterRng));
+    if (frame % 90 === 0) {
+      const roll = Math.random();
+      if (roll < 0.55) shooters.push(spawnShooter(shooterRng));
+      else if (roll < 0.75) {
+        shooters.push(spawnShooter(shooterRng));
+        shooters.push(spawnShooter(shooterRng));
+      }
+    }
     shooters = shooters.filter(s => s.life > 0);
     shooters.forEach(s => {
       const tailX = s.x - Math.cos(Math.atan2(s.vy, s.vx)) * s.len * s.life;
