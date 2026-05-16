@@ -42,6 +42,12 @@ Each page is self-contained. Shared JavaScript lives in `js/` and is referenced 
    ```
 5. Push — Vercel serves the page at `/my-article` automatically.
 
+## SEO
+
+Each page's `index.html` includes a full SEO block: `<meta name="description">`, canonical URL, Open Graph, Twitter Card, and a JSON-LD `Article` schema. When you add a new article, copy the SEO block from `cosmic-web-explainer/index.html` and update the title, description, URL, dates, and `about` entities.
+
+The XML sitemap lives at `sitemap.xml` in the repo root. Add a new `<url>` entry for each article you publish. `robots.txt` points crawlers to it automatically.
+
 ## Analytics
 
 Powered by `js/track.js` — a zero-dependency, consent-aware tracking layer that captures page views, scroll depth, read progress, engaged time, outbound clicks, and named conversion events. Consent mode is set to `implied`. Events route to the GTM `dataLayer` by default; configure additional transports (GA4, custom beacon) in the `CONFIG` block at the top of `track.js`.
