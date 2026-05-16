@@ -1,5 +1,7 @@
 // Page-level super-properties for analytics
-Track.set({ content_type: 'science_brief', topic: 'cosmic-web', author: 'BrandMeetsCode' });
+if (typeof Track !== 'undefined') {
+  Track.set({ content_type: 'science_brief', topic: 'cosmic-web', author: 'BrandMeetsCode' });
+}
 
 // ── COSMIC BACKGROUND ──
 (function () {
